@@ -1,0 +1,10 @@
+# {MOD_NAME}
+
+This mod patches MH2p UI functionality via `{JAR_NAME}`.
+
+## Installation
+Use with MH2p SD ModKit.
+
+## How it Works
+- `{JAR_NAME}` is copied into MH2p at `/mnt/app/eso/hmi/lsd/jars`
+- Classes inside override `lsd.jar` UI logic

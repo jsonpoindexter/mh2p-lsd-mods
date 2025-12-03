@@ -1,0 +1,2 @@
+# Paths are relative to lsd-src/
+# Comments and blank lines allowed

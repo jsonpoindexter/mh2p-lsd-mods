@@ -1,0 +1,47 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.kotlin
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Ignore everything under patch-project except the build.gradle.kts and settings.gradle files
+patch-project/*
+!patch-project/build.gradle.kts
+!patch-project/settings.gradle
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+.idea/
+
+lsd-src/*
+!lsd-src/.gitkeep
+original/lsd.jar
+original/lsd-fixed.jar
+!original/.gitkeep
+
+# ignore everything under modkit except the templates folder
+modkit/*
+!modkit/templates/

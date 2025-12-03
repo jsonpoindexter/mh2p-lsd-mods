@@ -1,0 +1,6 @@
+# patch-files.txt
+# Paths are relative to lsd-src/
+# Comments and blank lines allowed
+
+de/audi/app/terminalmode/adi/ADITMConfiguration.java
+de/audi/tghu/terminalmode/hmi/pag2pg35/TerminalModeScreenBag1.java
