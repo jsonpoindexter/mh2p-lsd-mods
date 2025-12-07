@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 PATCH_PROJECT_DIR="${ROOT_DIR}/patch-project"
-DEV_DIR="${ROOT_DIR}/dev"
+DEV_DIR="${ROOT_DIR}/scripts"
 
 source "${DEV_DIR}/dev.env"
 
@@ -18,7 +18,7 @@ if [[ ! -f "${JAR_PATH}" ]]; then
 fi
 
 echo "==> [DEPLOY] Copying ${JAR_PATH} -> ${PCM_HOST}:${REMOTE_TARGET}"
-scp -P "${PCM_PORT}" -i "${PCM_SSH_KEY}" \
+scp -P "${PCM_PORT}" -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa -o CASignatureAlgorithms=+ssh-rsa -o IdentitiesOnly=yes -i "${PCM_SSH_KEY}" \
     "${JAR_PATH}" \
     "${PCM_USER}@${PCM_HOST}:${REMOTE_TARGET}"
 
